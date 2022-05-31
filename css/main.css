@@ -12,6 +12,45 @@ body{
     max-width: 1440px;
     margin: 0 auto;
 }
+.title{
+    font-size: 40px;
+    line-height: 42px;
+    margin-bottom: 15px;
+    padding-top: 113px;
+    
+}
+.description{
+    font-size: 24px;
+    line-height: 30px;
+    color: #C0C0C0;
+    margin-bottom: 42px;
+}
+.link{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #000000;
+    background-color: #fff;
+    padding: 9px 10px 13px 42px;
+    border-radius: 14px;
+    position: relative;
+}
+.link::before{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    width: 32px;
+    height: 32px;
+    border-radius:50%;
+    top: 5px;
+    left: 5px;
+}
+
+
+
 .header__top-inner{
     max-width: 1200px;
     height: 90px;
@@ -98,63 +137,40 @@ body{
 .details__item-image{
     margin-right: 6px;
 }
-/*
+
 .specialization__inner{
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 120px;
-    padding-bottom: 100px;
     text-align: center;
 }
-.specialization__text{
-    
-}*/
-.title{
-    font-size: 40px;
-    line-height: 42px;
-    margin-bottom: 15px;
-    padding-top: 113px;
+
+.specialization__inner{
+    padding-bottom: 100px;
+}
+.specialization__item:nth-of-type(even){
+    margin-left: 16px;
     
 }
-.description{
-    font-size: 24px;
-    line-height: 30px;
-    color: #C0C0C0;
-    margin-bottom: 42px;
-}/*
-.specialization__items{
+.specialization__item:nth-of-type(odd){
+    margin-bottom: 16px;
     
 }
 .specialization__item{
-    border: solid red 1px;
     display: inline-block;
     max-width: 576px;
+    position: relative;
+    text-align: left;
     
   
 }
-.specialization__item-1{
-    background-image: url(../images/spec-item-1.jpg);
-    background-repeat: no-repeat;
-    background-position: top right;
-}
-.specialization__item-2{
-    background-image: url(../images/spec-item-2.jpg);
-    background-repeat: no-repeat;
-}
-.specialization__item-3{
-    background-image: url(../images/spec-item-3.jpg);
-    background-repeat: no-repeat;
-}
-.specialization__item-4{
-    background-image: url(../images/spec-item-4.jpg);
-    background-repeat: no-repeat;
-}
+
 .specialization__item-text{
     width: 500px;
     padding-left: 30px;
-    padding-top: 421px;
-    padding-bottom: 30px;
+    position: absolute;
+    bottom: 40px;
+    left:;
     
 }
 .specialization__item-title{
@@ -162,13 +178,15 @@ body{
     line-height: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .specialization__item-description{
     font-size: 14px;
     line-height: 20px;
     color: #C0C0C0;
+    margin-bottom: 17px;
 }
-*/
+
 .mountain__inner{
     background-image: url(../images/mountain-bg.jpg);
     background-repeat: no-repeat;
@@ -194,10 +212,10 @@ body{
     background-repeat: no-repeat;
 }
 .picture__text{
-    margin-right: 81px;
+    margin-right: 83px;
     margin-left: auto;
     max-width: 300px;
-    padding-top: 260px;
+    padding-top: 257px;
     padding-bottom: 204px;
     
 }
@@ -211,4 +229,165 @@ body{
     font-size: 14px;
     line-height: 20px;
     color: #C0C0C0;
+}
+.monstera__text{
+    padding-bottom: 199px;
+}
+.himalayas__text{
+    padding-top: 250px;
+    padding-bottom: 194px;
+}
+.tools__inner{
+    background-image: url(../images/tools-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.tools__text{
+    padding-top: 161px;
+    padding-bottom: 106px;
+    margin-left: 100px;
+    margin-right: auto;
+    max-width: 514px;
+}
+.tools__pre-title{
+    color: #C0C0C0;
+    margin-bottom: 6px;
+}
+.tools__title{
+    font-size: 28px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+.tools_description{
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.tools__link{
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #000000;
+}
+.contact__text{
+    max-width: 570px;
+    padding-top: 120px;
+    padding-bottom: 108px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.footer__inner{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1168px;
+}
+.footer__menu{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #fff 2px;
+}
+.footer__list{
+    list-style: none;
+    margin-bottom: 36px;
+}
+.footer__list-title{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+    margin-bottom: 10px;
+
+}
+.footer__list-link{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.footer__list-item{
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.pages{
+    margin-left: 55px;
+    margin-right: 102px;
+}
+
+.business-areas{
+    margin-left: auto;
+}
+.footer__logo-description{
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #C0C0C0
+}
+.footer__newsletter{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #fff 2px;
+    padding-top: 36px;  
+}
+.footer__text-title{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.footer__text-description{
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+    margin-bottom: 36px;
+}
+.footer__copy{
+    padding-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer__copy-text{
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+.footer__social-item{
+    margin-left: 20px;
+}
+.footer__subscribe{
+   position: relative;
+}
+.footer__subscribe-email{
+    padding: 7px;
+    padding-right: 85px;
+    height: 52px;
+    width: 458px;
+    background-color: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    
+}
+.footer__subscribe-submit{
+    height: 30px;
+    width: 64px;
+    background: #000;
+    border-radius: 11px;
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    cursor: pointer;
+    color: #fff;
 }
