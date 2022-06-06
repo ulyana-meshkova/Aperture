@@ -59,7 +59,6 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    border: solid red 3px;
 }
 .logo{
     margin-left: 2rem; /*32px*/
